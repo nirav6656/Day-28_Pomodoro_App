@@ -45,4 +45,5 @@ checkmark.grid(column=1,row=3)
 end_button = Button(text="Reset",width=10,font=(FONT_NAME,6,"bold"))
 end_button.grid(column=2,row=3)
 
+
 window.mainloop()
