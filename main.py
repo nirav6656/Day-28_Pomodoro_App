@@ -1,16 +1,35 @@
-# This is a sample Python script.
+from tkinter import *
+# ---------------------------- CONSTANTS ------------------------------- #
+PINK = "#e2979c"
+RED = "#e7305b"
+GREEN = "#9bdeac"
+YELLOW = "#f7f5dd"
+FONT_NAME = "Courier"
+WORK_MIN = 25
+SHORT_BREAK_MIN = 5
+LONG_BREAK_MIN = 20
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# ---------------------------- TIMER RESET ------------------------------- #
+
+# ---------------------------- TIMER MECHANISM ------------------------------- #
+
+# ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
+
+# ---------------------------- UI SETUP ------------------------------- #
+
+window = Tk()
+window.config(padx=60,pady=60)
+window.title("Pomodoro App")
+# window.config(background="black")
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Canvas
+canvas = Canvas(width=204, height=230)
+tomato_image = PhotoImage(file="tomato.png")
+canvas.create_image(102,115,image=tomato_image)
+canvas.config(background="black")
+canvas.pack()
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+window.mainloop()
